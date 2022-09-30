@@ -42,16 +42,28 @@ public class Main {
             return "Passwort ist länger als 8";
         }
     }
+
     public static String checkLength(String input) {
-        if (input.length() >= 8 && input.length() <=20 ) {
+        if (input.length() >= 8 && input.length() <= 20) {
             return "Passwort ist zwischen 8 und 20 Ziffern";
         } else {
             return "Passwort ist kürzer als 8 und länger als 20.";
         }
 
+    }
 
-}
-}
+        public static String checkDigit (String input){
+            char[] chars = input.toCharArray();
+            if (chars.isDigit() {
+                return "Passwort ist zwischen 8 und 20 Ziffern";
+            } else {
+                return "Passwort ist kürzer als 8 und länger als 20.";
+            }
+          }
+
+
+    }
+
 
 
 
