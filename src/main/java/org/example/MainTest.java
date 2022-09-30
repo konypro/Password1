@@ -56,4 +56,30 @@ class MainTest {
         String expected = "In dem Passwort ist eine Zahl enthalten.";
         assertEquals(expected, actual);
     }
+    @Test
+    public void containsNoDigit () {
+        //GIVEN
+        String input = "Passwort";
+
+        //WHEN
+        String actual = Main.checkDigit (input);
+
+        //THEN
+        String expected = "In dem Passwort ist keine Zahl enthalten.";
+        assertEquals(expected, actual);
+    }
+    @Test
+    public void containsDigitAtStart () {
+        //GIVEN
+        String input = "123Passwort";
+
+        //WHEN
+        String actual = Main.checkDigit (input);
+
+        //THEN
+        String expected = "In dem Passwort ist eine Zahl enthalten.";
+        assertEquals(expected, actual);
+    }
+
+
 }

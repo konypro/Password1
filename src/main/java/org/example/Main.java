@@ -4,10 +4,7 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
 
-        String input1 = "EuerPAsswort";
-        String input2 = "EuerPAsswort";
-        String input3 = "EuerPAsswort";
-        String input4 = "EuerPAsswort";
+
 
 
         String input = "EuerPAsswort";
@@ -49,20 +46,18 @@ public class Main {
         } else {
             return "Passwort ist kürzer als 8 und länger als 20.";
         }
-
     }
 
-        public static String checkDigit (String input){
-            char[] chars = input.toCharArray();
-            if (chars.isDigit() {
-                return "Passwort ist zwischen 8 und 20 Ziffern";
-            } else {
-                return "Passwort ist kürzer als 8 und länger als 20.";
+    public static String checkDigit(String input) {
+        for (int i = 0; i < input.length(); i++) {
+            char c = input.charAt(i);
+            if (Character.isDigit(c)) {
+                return "In dem Passwort ist eine Zahl enthalten.";
             }
-          }
-
-
+        }
+    return "In dem Passwort ist keine Zahl enthalten.";
     }
+}
 
 
 
