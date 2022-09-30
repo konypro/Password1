@@ -4,6 +4,10 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
 
+        String input1 = "EuerPAsswort";
+        String input2 = "EuerPAsswort";
+        String input3 = "EuerPAsswort";
+        String input4 = "EuerPAsswort";
 
 
 
