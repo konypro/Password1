@@ -18,4 +18,30 @@ class MainTest {
         assertEquals(expected, actual);
     }
 
+    //@Test
+    //public void includeNumbers () {
+    //    //GIVEN
+    //    String input = "Passwort123";
+//
+    //    //WHEN
+    //    String actual = Main.checkIfNumbers (input);
+//
+    //    //THEN
+    //    String expected = "Passwort beinhaltet Zahlen.";
+    //    assertEquals(expected, actual);
+    //}
+
+    @Test
+    public void isPasswordBetween8And20 () {
+        //GIVEN
+        String input = "Passwort";
+
+        //WHEN
+        String actual = Main.checkLength (input);
+
+        //THEN
+        String expected = "Passwort ist zwischen 8 und 20 Ziffern";
+        assertEquals(expected, actual);
+    }
+
 }
